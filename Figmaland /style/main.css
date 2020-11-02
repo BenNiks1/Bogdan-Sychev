@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*header 
+=============================*/
+.welcome {
+  background: url(../img/Gradient.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 1434px;
+}
+
+/*header navigation
+=============================*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.header .logo {
+  width: 186px;
+  height: 58px;
+  margin-right: 52px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__nav-item {
+  list-style: none;
+}
+
+.header__nav-item .nav__link {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 41px;
+}
+
+.header__subscribe {
+  margin-left: 54px;
+}
+
+.header__subscribe input {
+  padding: 19px;
+  margin-right: 12px;
+  width: 273px;
+  border: 0;
+  border-radius: 39px;
+  outline: none;
+  background-color: #efefef;
+  opacity: 0.12;
+}
+
+.header__subscribe button {
+  padding: 19px 38px;
+  border-radius: 39px;
+  border: 0;
+  outline: none;
+  color: #2091f9;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*header intro
+=============================*/
+.header__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+  color: #fff;
+}
+
+.header__intro-text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.header__intro-title {
+  font-size: 55px;
+  font-weight: 900;
+  margin-bottom: 27px;
+}
+
+.header__intro-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  width: 429px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.header__intro-btn {
+  padding: 16px 58px;
+  margin-bottom: 115px;
+  border-radius: 39px;
+  border: 0;
+  outline: none;
+  color: #2091f9;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
