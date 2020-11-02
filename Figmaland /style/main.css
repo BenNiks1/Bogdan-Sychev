@@ -16,7 +16,7 @@ body {
 .welcome {
   background: url(../img/Gradient.jpg) center no-repeat;
   background-size: cover;
-  min-height: 1434px;
+  margin-bottom: 135px;
 }
 
 /*header navigation
@@ -141,5 +141,92 @@ body {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+}
+
+/*features
+=============================*/
+.features__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+
+.features__intro-text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.features__intro-title {
+  font-size: 46px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+.features__intro-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  width: 298px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__inner .features__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 255px;
+}
+
+.features__inner .features__list-item:first-child {
+  margin-bottom: 85px;
+}
+
+.features__inner .features__list-icon {
+  width: 43px;
+  height: 43px;
+  margin-right: 10px;
+}
+
+.features__inner .features__list-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.features__inner .features__list-text {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 15px;
+  color: #374754;
 }
 /*# sourceMappingURL=main.css.map */

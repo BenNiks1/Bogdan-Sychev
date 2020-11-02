@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figmaland</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/main.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <svg style="display: none">
+      <symbol viewBox="0 0 44 44" id="features-icon">
+        <rect
+          x="0.839844"
+          y="0.5"
+          width="43"
+          height="43"
+          rx="21.5"
+          fill="#2091F9"
+        />
+        <path
+          d="M18.4325 23.2387L21.0637 20.6075L15.3085 14.8616C14.8622 14.4153 14.0905 14.5362 13.8116 15.1127C13.1515 16.498 13.3932 18.1994 14.5368 19.3523L18.4325 23.2387ZM24.7362 21.5559C26.1588 22.216 28.1577 21.7511 29.6361 20.2728C31.4119 18.497 31.7559 15.9494 30.3892 14.5827C29.0317 13.2253 26.4842 13.56 24.6991 15.3358C23.2207 16.8141 22.7559 18.8131 23.416 20.2356L14.9924 28.6592C14.8186 28.833 14.7209 29.0688 14.7209 29.3147C14.7209 29.5605 14.8186 29.7963 14.9924 29.9702C15.1662 30.144 15.402 30.2417 15.6479 30.2417C15.8937 30.2417 16.1295 30.144 16.3034 29.9702L22.0585 24.2336L27.8044 29.9795C27.8905 30.0655 27.9927 30.1338 28.1052 30.1804C28.2176 30.227 28.3382 30.251 28.4599 30.251C28.5817 30.251 28.7022 30.227 28.8147 30.1804C28.9271 30.1338 29.0293 30.0655 29.1154 29.9795C29.2015 29.8934 29.2698 29.7912 29.3163 29.6787C29.3629 29.5663 29.3869 29.4457 29.3869 29.324C29.3869 29.2022 29.3629 29.0817 29.3163 28.9692C29.2698 28.8568 29.2015 28.7546 29.1154 28.6685L23.3695 22.9226L24.7362 21.5559Z"
+          fill="white"
+        />
+      </symbol>
+    </svg>
     <section class="welcome">
-        <header class="header">
-            <img class='logo'src='./img/logo.png' alt="Логотип">
-            <nav>
-                <ul class="header__nav">
-                    <li class="header__nav-item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="header__nav-item"><a href="#" class="nav__link">Product</a></li>
-                    <li class="header__nav-item"><a href="#" class="nav__link">Pricing</a></li>
-                    <li class="header__nav-item"><a href="#" class="nav__link">About</a></li>
-                    <li class="header__nav-item"><a href="#" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-            <form class='header__subscribe' action="">
-                <input type="text" placeholder="Your Email">
-                <button>Subscribe</button>
-            </form>
-        </header>
-        <div class="header__intro">
-            <h3 class="header__intro-text">At your fingertips</h3>
-            <h1 class="header__intro-title">Lightning fast prototyping </h1>
-            <h4 class="header__intro-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</h4>
-            <button class="header__intro-btn">Try For Free</button>
-            <img src="./img/Macbook.png" alt="Macbook" class="header__intro-img">
-        </div>
+      <header class="header">
+        <a href="#"><img class="logo" src="./img/logo.png" alt="Логотип" /></a>
+        <nav>
+          <ul class="header__nav">
+            <li class="header__nav-item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav__link">Product</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="header__subscribe" action="">
+          <input type="text" placeholder="Your Email" />
+          <button>Subscribe</button>
+        </form>
+      </header>
+      <div class="header__intro">
+        <h3 class="header__intro-text">At your fingertips</h3>
+        <h1 class="header__intro-title">Lightning fast prototyping</h1>
+        <h4 class="header__intro-subtitle">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </h4>
+        <button class="header__intro-btn">Try For Free</button>
+        <img src="./img/Macbook.png" alt="Macbook" class="header__intro-img" />
+      </div>
     </section>
     <!-- /header -->
     <!-- features -->
     <section class="features">
-        <div class="features__intro">
-            <h3 class="features__intro-text">At your fingertips</h3>
-            <h2 class="features__intro-title">Lightning fast prototyping </h2>
-            <h4 class="features__intro-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</h4> 
-        </div>
+        <!-- features__intro -->
+      <div class="features__intro">
+        <h3 class="features__intro-text">At your fingertips</h3>
+        <h2 class="features__intro-title">Featurese</h2>
+        <h4 class="features__intro-subtitle">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </h4>
+      </div>
+      <!-- features__inner -->
+      <div class="features__inner">
+        <img src="./img/features/browser.png" alt="Браузер" />
+        <ul class="features__list">
+
+          <li class="features__list-item">
+            <svg class="features__list-icon"><use xlink:href="#features-icon"></use></svg>
+            <h3 class="features__list-title">At your fingertips</h3>
+            <p class="features__list-text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal.
+            </p>
+          </li>
+
+          <li class="features__list-item">
+            <svg class="features__list-icon"><use xlink:href="#features-icon"></use></svg>
+            <h3 class="features__list-title">At your fingertips</h3>
+            <p class="features__list-text">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal.
+            </p>
+          </li>
+          
+        </ul>
+      </div>
     </section>
-</body>
+  </body>
 </html>
