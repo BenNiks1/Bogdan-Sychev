@@ -358,13 +358,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 118px;
-  margin-bottom: 110px;
+  margin-bottom: 200px;
+}
+
+.newsletter__img {
+  margin-right: 113px;
 }
 
 .newsletter__inner-text {

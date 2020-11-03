@@ -3,10 +3,13 @@
 
 .newsletter {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 118px;
-    margin-bottom: 110px;
+    margin-bottom: 200px;
+    &__img{
+      margin-right: 113px;
+    }
     &__inner {
       &-text {
         font-size: 22px;
