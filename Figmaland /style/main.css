@@ -642,4 +642,92 @@ body {
 .testimonials__inner-item--job {
   padding: 10px 0px 0px 10px;
 }
+
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 0;
+  color: #fff;
+  background: #252b42;
+}
+
+.pricing__description {
+  margin-right: 284px;
+}
+
+.pricing__description-title {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 65px;
+  margin-bottom: 26px;
+}
+
+.pricing__description-text {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: normal;
+  width: 340px;
+}
+
+.pricing__trial-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.pricing__trial-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pricing__trial-title .cost {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 65px;
+  margin-right: 10px;
+  margin-bottom: 19px;
+}
+
+.pricing__trial-subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  width: 218px;
+  margin-bottom: 19px;
+}
+
+.pricing__trial .start-btn {
+  padding: 18px 38px;
+  border-radius: 39px;
+  border: 1px solid #2091f9;
+  outline: none;
+  color: #fff;
+  background-color: #2091f9;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.pricing__trial .start-btn:hover {
+  color: #2091f9;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 /*# sourceMappingURL=main.css.map */
