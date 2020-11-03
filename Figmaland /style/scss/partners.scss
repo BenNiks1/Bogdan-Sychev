@@ -6,7 +6,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 90px 0;
+    margin-top: 90px;
+    margin-bottom: 191px;
     
   
     &-title {
@@ -37,14 +38,15 @@
       }
     }
     &-btn{
-      padding: 19px 38px;
+      padding: 16px 58px;
       border-radius: 39px;
       border: 1px solid #2091f9;
       outline: none;
       color: #fff;
       background-color: #2091f9;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 33px;
       cursor: pointer;
       &:hover {
         color: #2091f9;
