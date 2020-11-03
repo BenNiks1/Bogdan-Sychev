@@ -1,0 +1,117 @@
+/*header 
+=============================*/
+.welcome {
+    background: url(../img/Gradient.jpg) center;
+    background-size: 100% 100%;
+  
+    margin-bottom: 135px;
+  }
+  /*header navigation
+  =============================*/
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    .logo {
+      width: 186px;
+      height: 58px;
+      margin-right: 52px;
+    }
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      &-item {
+        list-style: none;
+        .nav__link {
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+          margin-right: 41px;
+        }
+      }
+    }
+    &__subscribe {
+      margin-left: 54px;
+      input {
+        padding: 19px;
+        margin-right: 12px;
+        width: 273px;
+  
+        border: 0;
+        border-radius: 39px;
+        outline: none;
+        background-color: #efefef;
+        background: rgba(255, 255, 255, 0.12);
+        &::placeholder {
+          color: #18171d;
+          opacity: 0.12;
+        }
+      }
+      button {
+        padding: 19px 38px;
+        border-radius: 39px;
+        border: 1px solid #fff;
+        outline: none;
+        color: #2091f9;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+  /*header intro
+  =============================*/
+  .header__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 150px;
+  
+    color: #fff;
+    &-text {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+    &-title {
+      font-size: 55px;
+      font-weight: 900;
+      margin-bottom: 27px;
+    }
+    &-subtitle {
+      font-size: 16px;
+      font-weight: 700;
+  
+      width: 429px;
+      margin-bottom: 90px;
+  
+      text-align: center;
+    }
+    &-btn {
+      padding: 16px 58px;
+      margin-bottom: 115px;
+  
+      border-radius: 39px;
+      border: 1px solid #fff;
+      outline: none;
+      color: #2091f9;
+      font-size: 16px;
+      font-weight: 700;
+  
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
+      }
+    }
+  }

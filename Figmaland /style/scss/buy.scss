@@ -1,0 +1,71 @@
+/*buy__section
+=============================*/
+
+.buy__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background: linear-gradient(39.97deg, #00f3b9 0.79%, #2187ff 79.29%);
+    color: #fff;
+    &-text {
+      font-size: 22px;
+      font-weight: 700;
+  
+      margin-bottom: 17px;
+      padding-top: 100px;
+    }
+    &-title {
+      font-size: 46px;
+      font-weight: 400;
+      margin-bottom: 27px;
+    }
+    &-subtitle {
+      font-size: 16px;
+      font-weight: 700;
+  
+      width: 298px;
+      margin-bottom: 90px;
+  
+      text-align: center;
+    }
+    &-buttons {
+      margin-bottom: 100px;
+      .buy-btn {
+        margin-right: 16px;
+        padding: 19px 38px;
+        border-radius: 39px;
+        border: 0;
+        outline: none;
+        border: 1px solid #fff;
+  
+        color: #2091f9;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.2s;
+        }
+      }
+      .free-btn {
+        margin-right: 16px;
+        padding: 19px 38px;
+        border-radius: 39px;
+        border: 0;
+        outline: none;
+        border: 1px solid #fff;
+  
+        color: #2091f9;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
