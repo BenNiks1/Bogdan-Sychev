@@ -236,7 +236,7 @@ body {
 }
 
 /*benefits*/
-.benefits__list-item {
+.advantages__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,19 +249,19 @@ body {
   padding: 100px 0;
 }
 
-.benefits__list-item .item__inner {
+.advantages__list-item .item__inner {
   width: 513px;
   margin: 0 90px;
 }
 
-.benefits__list-item .item__inner-title {
+.advantages__list-item .item__inner-title {
   font-weight: 500;
   font-size: 46px;
   line-height: 57px;
   margin-bottom: 46px;
 }
 
-.benefits__list-item .item__inner-subtitle {
+.advantages__list-item .item__inner-subtitle {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -270,7 +270,7 @@ body {
   width: 480px;
 }
 
-.benefits__list-item .item__inner-buttons button {
+.advantages__list-item .item__inner-buttons button {
   padding: 18px 46px;
   margin-bottom: 60px;
   border: 1px solid #03d6f3;
@@ -287,14 +287,14 @@ body {
   cursor: pointer;
 }
 
-.benefits__list-item .item__inner-buttons button:hover {
+.advantages__list-item .item__inner-buttons button:hover {
   background: none;
   color: #30d7ba;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.benefits__list-item .item__inner-buttons button:first-child {
+.advantages__list-item .item__inner-buttons button:first-child {
   margin-right: 13px;
 }
 
