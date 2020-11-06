@@ -573,10 +573,6 @@ body {
   display: flex;
 }
 
-.footer__nav-price .price__list {
-  margin-right: 75px;
-}
-
 .footer__nav-price .price__list-item {
   font-size: 15px;
   line-height: 27px;
