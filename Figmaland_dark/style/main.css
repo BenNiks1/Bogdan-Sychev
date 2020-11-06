@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Graphik Web";
+  src: url("Graphik-Medium-Web.eot");
+  src: url("Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"), url("Graphik-Medium-Web.woff") format("woff"), url("Graphik-Medium-Web.ttf") format("truetype"), url("Graphik-Medium-Web.svg#Graphik-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("Graphik-Regular-Web.eot");
+  src: url("Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("Graphik-Regular-Web.woff") format("woff"), url("Graphik-Regular-Web.ttf") format("truetype"), url("Graphik-Regular-Web.svg#Graphik-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Graphik Web", sans-serif;
+  background: #181818;
+}
+
+/*header*/
+.header {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  min-width: 1440px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 160px;
+}
+
+.header__menu-logo {
+  margin-right: 222px;
+}
+
+.header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 264px;
+}
+
+.header__menu-item {
+  list-style: none;
+  margin-right: 51px;
+}
+
+.header__menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__menu-login-btn {
+  padding: 13px 46px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  font-family: "Graphik Web", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.header__menu-login-btn:hover {
+  background: #fff;
+  color: #112d57;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header__intro-title {
+  width: 630px;
+  font-family: "Graphik Web", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 65px;
+  margin-bottom: 27px;
+}
+
+.header__intro-subtitle {
+  color: #e5e5e5;
+  font-family: "Graphik Web", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 71px;
+  width: 602px;
+}
+
+.header__intro-buttons button {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  font-family: "Graphik Web", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.header__intro-buttons button:hover {
+  background: #4452fe;
+  border: 1px solid #4452fe;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__intro-buttons button:first-child {
+  margin-right: 13px;
+}
+
+.header .gradient {
+  width: 100%;
+  height: 551px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 1080px;
+  bottom: 0%;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(66%, #0e0e0e));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66%);
+}
+/*# sourceMappingURL=main.css.map */
