@@ -52,11 +52,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 160px;
+  margin-bottom: 142px;
 }
 
 .header__menu-logo {
-  margin-right: 222px;
+  margin-right: 126px;
 }
 
 .header__menu-list {
@@ -72,7 +72,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 264px;
+  margin-right: 173px;
 }
 
 .header__menu-item {
@@ -80,10 +80,14 @@ body {
   margin-right: 51px;
 }
 
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+
 .header__menu-item a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
@@ -125,18 +129,18 @@ body {
 }
 
 .header__intro-title {
-  width: 630px;
+  width: 709px;
   font-family: "Graphik Web", sans-serif;
-  font-weight: 900;
-  font-size: 55px;
-  line-height: 65px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 88px;
   margin-bottom: 27px;
 }
 
 .header__intro-subtitle {
   color: #e5e5e5;
   font-family: "Graphik Web", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 71px;
@@ -331,7 +335,7 @@ body {
 }
 
 .contents__list .list__item-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   color: #000;
@@ -357,7 +361,7 @@ body {
   color: #fff;
   font-family: "Graphik Web", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   line-height: 25px;
   cursor: pointer;
@@ -450,7 +454,7 @@ body {
   color: #fff;
   font-family: "Graphik Web", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   line-height: 25px;
   cursor: pointer;
@@ -522,7 +526,7 @@ body {
   color: #fff;
   font-family: "Graphik Web", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   line-height: 25px;
   cursor: pointer;
@@ -533,5 +537,72 @@ body {
   border: 1px solid #4452fe;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+/*testimonials*/
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials-title {
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 60px;
+}
+
+.testimonials__list {
+  -webkit-column-count: 2;
+          column-count: 2;
+  width: 890px;
+  margin-bottom: 210px;
+}
+
+.testimonials__list .list__item {
+  list-style: none;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 430px;
+  padding: 40px;
+  margin-right: 23px;
+  margin-bottom: 20px;
+}
+
+.testimonials__list .list__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.testimonials__list .list__item-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 31px;
+}
+
+.testimonials__list .list__item-client img {
+  margin-right: 13px;
+}
+
+.testimonials__list .list__item-client-wrapper {
+  font-weight: 600;
+}
+
+.testimonials__list .list__item-text {
+  width: 320px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

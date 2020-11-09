@@ -49,26 +49,29 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 160px;
+    margin-bottom: 142px;
 
     &-logo {
-      margin-right: 222px;
+      margin-right: 126px;
     }
     &-list {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      margin-right: 264px;
+      margin-right: 173px;
     }
     &-item {
       list-style: none;
       margin-right: 51px;
+      &:last-child {
+        margin-right: 0;
+      }
 
       a {
         color: #fff;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
       }
@@ -102,17 +105,17 @@ body {
     color: #fff;
     margin-bottom: 115px;
     &-title {
-      width: 630px;
+      width: 709px;
       font-family: "Graphik Web", sans-serif;
-      font-weight: 900;
-      font-size: 55px;
-      line-height: 65px;
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 88px;
       margin-bottom: 27px;
     }
     &-subtitle {
       color: #e5e5e5;
       font-family: "Graphik Web", sans-serif;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 71px;
@@ -268,7 +271,7 @@ body {
         }
       }
       &-title {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 30px;
         color: #000;
@@ -295,7 +298,7 @@ body {
 
         font-family: "Graphik Web", sans-serif;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 17px;
         line-height: 25px;
 
@@ -369,7 +372,7 @@ body {
 
     font-family: "Graphik Web", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
     line-height: 25px;
 
@@ -388,7 +391,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 
   &-title {
     font-weight: normal;
@@ -413,12 +415,12 @@ body {
     &-icon {
       margin-right: 74px;
       list-style: none;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
   }
-  &-btn{
+  &-btn {
     padding: 13px 40px;
     margin-bottom: 210px;
 
@@ -429,7 +431,7 @@ body {
 
     font-family: "Graphik Web", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
     line-height: 25px;
 
@@ -439,6 +441,58 @@ body {
       border: 1px solid #4452fe;
 
       transition: 0.2s;
+    }
+  }
+}
+
+/*testimonials*/
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 62px;
+
+    margin-bottom: 60px;
+  }
+  &__list {
+    column-count:2;
+
+    width: 890px;
+    margin-bottom: 210px;
+    .list__item {
+      list-style: none;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      width: 430px;
+      padding: 40px;
+      margin-right: 23px;
+      margin-bottom: 20px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &-client {
+        display: flex;
+        align-items: center;
+        margin-bottom: 31px;
+        img {
+          margin-right: 13px;
+        }
+        &-wrapper {
+          font-weight: 600;
+        }
+      }
+      &-text {
+        width: 320px;
+        font-weight: normal;
+      }
     }
   }
 }
