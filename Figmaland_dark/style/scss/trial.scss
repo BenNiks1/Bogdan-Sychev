@@ -46,4 +46,9 @@
         }
       }
     }
+    &__picture{
+      &-img{
+        border-radius: 0 0 33px 0;
+      }
+    }
   }

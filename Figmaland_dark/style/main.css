@@ -125,7 +125,7 @@ body {
   text-align: center;
   color: #fff;
   margin-bottom: 162px;
-  padding: 120px;
+  padding-bottom: 120px;
 }
 
 .header__intro-title {
@@ -226,11 +226,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 222px;
 }
 
 .features__inner .features__intro img {
   margin-right: 27px;
-  margin-bottom: 222px;
 }
 
 .features__inner .features__intro .features__list-item {
@@ -662,6 +662,10 @@ body {
   border: 1px solid #4452fe;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.trial__picture-img {
+  border-radius: 0 0 33px 0;
 }
 
 /*footer*/
