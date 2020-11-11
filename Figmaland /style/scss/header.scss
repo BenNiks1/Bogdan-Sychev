@@ -1,56 +1,80 @@
 /*header 
 =============================*/
-.welcome {
-    background: url(../img/Gradient.jpg) center;
+
+.header {
+    width: 100%;
+  
+    margin: 0 auto;
+  
+    background: url(../img/Gradient.png) center no-repeat;
     background-size: 100% 100%;
+    color: #fff;
   
-    margin-bottom: 135px;
-  }
-  /*header navigation
-  =============================*/
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    .logo {
-      width: 186px;
-      height: 58px;
-      margin-right: 52px;
-    }
-    &__nav {
+    /*header__inner*/
+    &__inner {
       display: flex;
-      flex-direction: row;
-      &-item {
-        list-style: none;
-        .nav__link {
-          font-size: 15px;
-          color: #fff;
-          text-decoration: none;
-          margin-right: 41px;
-        }
-      }
-    }
-    &__subscribe {
-      margin-left: 54px;
-      input {
-        padding: 19px;
-        margin-right: 12px;
-        width: 273px;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+      margin-bottom: 90px;
   
-        border: 0;
-        border-radius: 39px;
-        outline: none;
-        background-color: #efefef;
-        background: rgba(255, 255, 255, 0.12);
-        &::placeholder {
-          color: #18171d;
-          opacity: 0.12;
+      &-logo {
+      }
+      &-nav {
+        margin: 0 52px;
+        .header__list {
+          display: flex;
+          flex-direction: row;
+          &-item {
+            list-style: none;
+            margin-right: 41px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          &-link {
+            font-size: 15px;
+            line-height: 27px;
+            color: #fff;
+            text-decoration: none;
+          }
         }
       }
-      button {
-        padding: 19px 38px;
+      &-form {
+        .form-text {
+          padding: 19px 39px;
+          margin-right: 12px;
+  
+          border: 0;
+          border-radius: 39px;
+          outline: none;
+          background-color: #efefef;
+          background: rgba(255, 255, 255, 0.12);
+          &::placeholder {
+            color: #18171d;
+            opacity: 0.12;
+          }
+        }
+        .form-btn {
+          padding: 19px 38px;
+          border-radius: 39px;
+          border: 1px solid #fff;
+          outline: none;
+          color: #2091f9;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+            background: rgba(0, 0, 0, 0);
+            transition: 0.2s;
+          }
+        }
+      }
+      &-login {
+        display: none;
+  
+        padding: 18px 38px;
         border-radius: 39px;
         border: 1px solid #fff;
         outline: none;
@@ -65,53 +89,85 @@
         }
       }
     }
-  }
-  /*header intro
-  =============================*/
-  .header__intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   
-    margin-top: 150px;
+    /*header__intro*/
   
-    color: #fff;
-    &-text {
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 17px;
-    }
-    &-title {
-      font-size: 55px;
-      font-weight: 900;
-      margin-bottom: 27px;
-    }
-    &-subtitle {
-      font-size: 16px;
-      font-weight: 700;
-  
-      width: 429px;
-      margin-bottom: 90px;
-  
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-    }
-    &-btn {
-      padding: 16px 58px;
-      margin-bottom: 115px;
+      padding: 0 20px;
   
-      border-radius: 39px;
-      border: 1px solid #fff;
-      outline: none;
-      color: #2091f9;
-      font-size: 16px;
-      font-weight: 700;
-  
-      cursor: pointer;
-      &:hover {
-        color: #fff;
-        background: rgba(0, 0, 0, 0);
-        transition: 0.2s;
+      margin-bottom: 230px;
+      &-subtitle {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 17px;
       }
+      &-title {
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 65px;
+        margin-bottom: 17px;
+      }
+      &-text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+  
+        margin-bottom: 90px;
+        max-width: 429px;
+      }
+      &-btn {
+        margin-bottom: 115px;
+        padding: 16px 58px;
+  
+        border-radius: 39px;
+        border: 1px solid #fff;
+        outline: none;
+        color: #2091f9;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.2s;
+        }
+      }
+      &-img {
+        max-width: 1054px;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 880px) {
+    .header {
+      background: url(../img/Gradient.png);
+      background-size: cover;
+      &__inner {
+        justify-content: space-around;
+        margin-bottom: 50px;
+        &-nav {
+          display: none;
+        }
+      }
+      &__intro {
+        &-title {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1220px) {
+    .header__inner-form {
+      display: none;
+    }
+    .header__inner-login {
+      display: block;
     }
   }
