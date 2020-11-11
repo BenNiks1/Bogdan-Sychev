@@ -1,80 +1,98 @@
 /*pricing
 ========================*/
 .pricing {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  
-    padding: 100px 0;
-    margin-bottom: 210px;
-  
-    color: #fff;
-    background: #252b42;
-    &__description {
-      margin-right: 284px;
-      &-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 100px 0;
+  margin-bottom: 210px;
+
+  color: #fff;
+  background: #252b42;
+  &__description {
+    margin-right: 284px;
+    &-title {
+      font-weight: 900;
+      font-size: 55px;
+      line-height: 65px;
+
+      margin-bottom: 26px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: normal;
+      max-width: 340px;
+    }
+  }
+  &__trial {
+    &-text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+
+      margin-bottom: 16px;
+    }
+    &-title {
+      display: flex;
+      align-items: center;
+
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      .cost {
         font-weight: 900;
         font-size: 55px;
         line-height: 65px;
-  
-        margin-bottom: 26px;
-      }
-      &-text {
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: normal;
-        width: 340px;
-      }
-    }
-    &__trial {
-      &-text {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-  
-        margin-bottom: 16px;
-      }
-      &-title {
-        display: flex;
-        align-items: center;
-  
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        .cost {
-          font-weight: 900;
-          font-size: 55px;
-          line-height: 65px;
-  
-          margin-right: 10px;
-          margin-bottom: 19px;
-        }
-      }
-      &-subtitle {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-  
-        width: 218px;
+
+        margin-right: 10px;
         margin-bottom: 19px;
       }
-      .start-btn {
-        padding: 18px 38px;
-        border-radius: 39px;
-        border: 1px solid #2091f9;
-        outline: none;
-        color: #fff;
-        background-color: #2091f9;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
-        cursor: pointer;
-        &:hover {
-          color: #2091f9;
-  
-          background: rgba(0, 0, 0, 0);
-          transition: 0.2s;
-        }
+    }
+    &-subtitle {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+
+      max-width: 218px;
+      margin-bottom: 19px;
+    }
+    .start-btn {
+      padding: 18px 38px;
+      border-radius: 39px;
+      border: 1px solid #2091f9;
+      outline: none;
+      color: #fff;
+      background-color: #2091f9;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      cursor: pointer;
+      &:hover {
+        color: #2091f9;
+
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
       }
     }
   }
+}
+@media screen and (max-width: 1000px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    &__description {
+      padding: 0 20px;
+      text-align: center;
+      margin-right: 0;
+      &-text {
+        margin-bottom: 112px;
+      }
+    }
+    .start-btn{
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
