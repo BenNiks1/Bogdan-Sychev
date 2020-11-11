@@ -453,6 +453,8 @@ body {
   transition: 0.2s;
 }
 
+/*newsletter
+=============================*/
 .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
