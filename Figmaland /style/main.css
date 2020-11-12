@@ -323,7 +323,7 @@ body {
 
 .features__inner .features__list-item {
   list-style: none;
-  margin-bottom: 75px;
+  margin-bottom: 90px;
 }
 
 .features__inner .features__list-item:last-child {
@@ -1502,5 +1502,14 @@ body {
   background: rgba(0, 0, 0, 0);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1120px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
