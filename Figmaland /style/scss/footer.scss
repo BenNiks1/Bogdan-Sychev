@@ -3,15 +3,16 @@
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
-  padding: 107px 0;
+  padding: 102px 0;
   background: #252b42;
   &__nav {
     display: flex;
     flex-direction: row;
-    margin-right: 80px;
+    margin: 11px 54px 0 0;
+
     &-item {
       margin-right: 20px;
       width: 186px;
@@ -21,7 +22,7 @@
       font-size: 22px;
       line-height: 33px;
       color: #fff;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
   }
   &__list {
@@ -42,12 +43,12 @@
     &-list {
       display: flex;
       flex-direction: row;
-      margin-bottom: 29px;
+      margin-bottom: 25px;
     }
     &-item {
       list-style: none;
 
-      margin-right: 32px;
+      margin-right: 23px;
       svg {
         fill: #fff;
         width: 43px;
@@ -61,6 +62,7 @@
     align-items: flex-start;
 
     max-width: 373px;
+    padding-left: 13px;
 
     &-title {
       font-weight: bold;
@@ -102,8 +104,9 @@
       color: #fff;
       background-color: #2091f9;
       font-family: "Roboto", sans-serif;
-      font-size: 16px;
       font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
       cursor: pointer;
       &:hover {
         color: #2091f9;
@@ -114,8 +117,8 @@
     }
   }
 }
-@media screen and (max-width:1120px){
-  .footer{
+@media screen and (max-width: 1120px) {
+  .footer {
     flex-direction: column;
   }
 }
