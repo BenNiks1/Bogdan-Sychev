@@ -20,7 +20,7 @@
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #374754;
-    width: 300px;
+    max-width: 300px;
 
     margin-bottom: 69px;
   }
@@ -47,7 +47,7 @@
       width: 100%;
 
       max-width: 871px;
-      
+
       margin-bottom: 60px;
     }
     &-mobile {
@@ -90,7 +90,7 @@
     border-radius: 20px;
 
     padding: 52px 50px;
-    margin: 0 20px 99px 20px;
+    margin-bottom: 99px;
     max-width: 868px;
 
     &-title {
@@ -164,6 +164,7 @@
 }
 @media screen and (max-width: 600px) {
   .contact {
+    
     &__img {
       &-desktop {
         display: none;
@@ -173,7 +174,6 @@
         width: 100%;
 
         max-width: 871px;
-        padding: 0 30px;
         margin-bottom: 50px;
       }
     }
@@ -202,5 +202,11 @@
     &__form {
       margin-bottom: 149px;
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact {
+    margin: 0 20px;
+    
   }
 }

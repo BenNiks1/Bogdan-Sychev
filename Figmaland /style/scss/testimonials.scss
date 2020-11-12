@@ -8,7 +8,7 @@
 
   margin-bottom: 100px;
 
-  &-title {
+  &__title {
     margin-bottom: 90px;
     font-size: 46px;
     font-weight: normal;
@@ -134,6 +134,14 @@
         margin: 15px 34px;
         padding: 34px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 360x) {
+  .testimonials{
+    &__title{
+      // font-size: 36px;
     }
   }
 }
