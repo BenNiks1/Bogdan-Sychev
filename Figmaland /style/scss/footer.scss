@@ -2,112 +2,115 @@
 =======================*/
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 107px 0;
+  background: #252b42;
+  &__nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    padding: 107px 0;
-    background: #252b42;
-    &__nav {
+    flex-direction: row;
+    margin-right: 80px;
+    &-item {
+      margin-right: 20px;
+      width: 186px;
+    }
+    &-title {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  }
+  &__list {
+    &-item {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    &-link {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__contact {
+    width: 373px;
+    &-list {
       display: flex;
       flex-direction: row;
-      margin-right: 80px;
-      &-item {
-        margin-right: 20px;
-        width: 186px;
-      }
-      &-title {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 33px;
-        color: #fff;
-        margin-bottom: 15px;
-      }
+      margin-bottom: 29px;
     }
-    &__list {
-      &-item {
-        list-style: none;
-        margin-bottom: 16px;
-      }
-      &-link {
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 27px;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-    &__contact {
-      &-list {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 29px;
-      }
-      &-item {
-        list-style: none;
-  
-        margin-right: 32px;
-        svg {
-          fill: #fff;
-          width: 40px;
-          height: 40px;
-        }
-      }
-    }
-    &__newsletter {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  
-      max-width: 373px;
-  
-      &-title {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 33px;
-  
-        color: #fff;
-        margin-bottom: 5px;
-      }
-      &-text {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-  
-        color: #fff;
-        margin-bottom: 29px;
-      }
-      &-input {
-        padding: 19px;
-        width: 100%;
-  
-        border: 0;
-        border-radius: 39px;
-        outline: none;
-        background-color: #efefef;
-        background: #f4f4f4;
-        margin-bottom: 12px;
-      }
-      .subscribe-btn {
-        width: 100%;
-        padding: 17px;
-        margin-bottom: 24px;
-  
-        border-radius: 39px;
-        border: 1px solid #2091f9;
-        outline: none;
-        color: #fff;
-        background-color: #2091f9;
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-        &:hover {
-          color: #2091f9;
-  
-          background: rgba(0, 0, 0, 0);
-          transition: 0.2s;
-        }
+    &-item {
+      list-style: none;
+
+      margin-right: 32px;
+      svg {
+        fill: #fff;
+        width: 43px;
+        height: 43px;
       }
     }
   }
-  
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 373px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    &-text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+
+      color: #fff;
+      margin-bottom: 29px;
+    }
+    &-input {
+      padding: 19px 35px;
+      width: 100%;
+      max-width: 353px;
+
+      border: 0;
+      border-radius: 39px;
+      outline: none;
+      background-color: #efefef;
+      background: #f4f4f4;
+      margin-bottom: 12px;
+    }
+    .subscribe-btn {
+      width: 100%;
+      max-width: 353px;
+      padding: 17px;
+      margin-bottom: 24px;
+
+      border-radius: 35px;
+      border: 1px solid #2091f9;
+      outline: none;
+      color: #fff;
+      background-color: #2091f9;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        color: #2091f9;
+
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
+      }
+    }
+  }
+}

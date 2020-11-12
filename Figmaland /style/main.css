@@ -33,8 +33,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px 20px;
-  margin-bottom: 90px;
+  padding: 50px 0;
+  margin-bottom: 100px;
 }
 
 .header__inner-nav {
@@ -63,6 +63,8 @@ body {
 .header__inner-nav .header__list-link {
   font-size: 15px;
   line-height: 27px;
+  letter-spacing: 0.2px;
+  font-weight: normal;
   color: #fff;
   text-decoration: none;
 }
@@ -70,6 +72,7 @@ body {
 .header__inner-form .form-text {
   padding: 19px 39px;
   margin-right: 12px;
+  width: 273px;
   border: 0;
   border-radius: 39px;
   outline: none;
@@ -79,21 +82,29 @@ body {
 
 .header__inner-form .form-text::-webkit-input-placeholder {
   color: #18171d;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 0.12;
 }
 
 .header__inner-form .form-text:-ms-input-placeholder {
   color: #18171d;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 0.12;
 }
 
 .header__inner-form .form-text::-ms-input-placeholder {
   color: #18171d;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 0.12;
 }
 
 .header__inner-form .form-text::placeholder {
   color: #18171d;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 0.12;
 }
 
@@ -101,10 +112,14 @@ body {
   padding: 19px 38px;
   border-radius: 39px;
   border: 1px solid #fff;
+  background: #fff;
   outline: none;
   color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
   cursor: pointer;
 }
 
@@ -120,8 +135,10 @@ body {
   padding: 18px 38px;
   border-radius: 39px;
   border: 1px solid #fff;
+  background: #fff;
   outline: none;
   color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -154,6 +171,7 @@ body {
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
+  letter-spacing: 0.1px;
   margin-bottom: 17px;
 }
 
@@ -161,13 +179,15 @@ body {
   font-weight: 900;
   font-size: 55px;
   line-height: 65px;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
+  letter-spacing: 0.2px;
 }
 
 .header__intro-text {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 0.2px;
   text-align: center;
   margin-bottom: 90px;
   max-width: 429px;
@@ -178,8 +198,10 @@ body {
   padding: 16px 58px;
   border-radius: 39px;
   border: 1px solid #fff;
+  background: #fff;
   outline: none;
   color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
@@ -257,16 +279,17 @@ body {
   font-size: 46px;
   line-height: 57px;
   color: #252b42;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
 }
 
 .features__text {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 0.2px;
   color: #374754;
   max-width: 298px;
-  margin-bottom: 128px;
+  margin-bottom: 138px;
 }
 
 .features__inner {
@@ -403,6 +426,7 @@ body {
 
 .buy-section__subtitle {
   font-size: 22px;
+  line-height: 33px;
   font-weight: 700;
   margin-bottom: 17px;
 }
@@ -410,12 +434,15 @@ body {
 .buy-section__title {
   font-size: 46px;
   font-weight: 400;
+  line-height: 57px;
   margin-bottom: 27px;
 }
 
 .buy-section__text {
   font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.2px;
   max-width: 298px;
   margin-bottom: 90px;
 }
@@ -435,18 +462,22 @@ body {
 }
 
 .buy-section__buttons button {
-  padding: 19px 38px;
-  border-radius: 39px;
-  border: 0;
+  padding: 18px 31px;
+  border-radius: 35px;
   outline: none;
   border: 1px solid #fff;
+  background: #fff;
   color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
   cursor: pointer;
 }
 
 .buy-section__buttons button:hover {
+  padding: 16px 45px;
   color: #fff;
   background: rgba(0, 0, 0, 0);
   -webkit-transition: 0.2s;
@@ -462,10 +493,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 190px;
+  margin-bottom: 203px;
 }
 
 .newsletter__intro {
@@ -500,13 +528,13 @@ body {
 
 .newsletter-img {
   width: 100%;
-  max-width: 854px;
-  padding-right: 50px;
-  padding-left: 119px;
+  max-width: 677px;
+  margin-right: 113px;
+  margin-left: 119px;
 }
 
 .newsletter__inner {
-  padding: 0 63px;
+  max-width: 455px;
 }
 
 .newsletter__inner-subtitle {
@@ -526,10 +554,15 @@ body {
   max-width: 296px;
 }
 
+.newsletter__subscribe {
+  margin-left: 10px;
+}
+
 .newsletter__subscribe-title {
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
+  letter-spacing: 0.1px;
   color: #252b42;
 }
 
@@ -537,6 +570,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: 0.2px;
   color: #374754;
   margin-bottom: 34px;
 }
@@ -554,12 +588,37 @@ body {
 
 .newsletter__subscribe-input {
   padding: 19px 39px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  width: 273px;
   background: #f4f4f4;
   border: 1px solid #e8e8e8;
   border-radius: 39px;
   outline: none;
-  margin-right: 12px;
-  margin-bottom: 12px;
+}
+
+.newsletter__subscribe-input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.newsletter__subscribe-input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.newsletter__subscribe-input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.newsletter__subscribe-input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .newsletter__subscribe-btn {
@@ -568,9 +627,11 @@ body {
   border: 1px solid #2091f9;
   border-radius: 35px;
   max-height: 54px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+  letter-spacing: 0.2px;
   color: #fff;
 }
 
@@ -633,25 +694,26 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-bottom: 191px;
+  margin-bottom: 190px;
 }
 
 .partners__title {
   font-size: 46px;
   font-weight: 400;
   line-height: 57px;
+  letter-spacing: 0.2px;
   color: #252b42;
-  width: 296px;
   margin-bottom: 27px;
 }
 
 .partners__subtitle {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 33px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
   color: #252b42;
-  max-width: 400px;
-  margin-bottom: 110px;
+  max-width: 298px;
+  margin-bottom: 90px;
 }
 
 .partners__list {
@@ -660,14 +722,17 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 76px;
 }
 
 .partners__list-icon {
-  margin: 0 31px;
+  margin-right: 36px;
   list-style: none;
 }
 
@@ -677,13 +742,14 @@ body {
 
 .partners-btn {
   padding: 16px 58px;
-  border-radius: 39px;
+  border-radius: 35px;
   border: 1px solid #2091f9;
   outline: none;
   color: #fff;
   background-color: #2091f9;
-  font-size: 22px;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 22px;
   line-height: 33px;
   cursor: pointer;
 }
@@ -697,8 +763,6 @@ body {
 
 @media screen and (max-width: 480px) {
   .partners__subtitle {
-    font-size: 16px;
-    line-height: 20px;
     max-width: 318px;
   }
   .partners__list {
@@ -735,7 +799,7 @@ body {
 }
 
 .testimonials-title {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   font-size: 46px;
   font-weight: normal;
   line-height: 57px;
@@ -744,13 +808,15 @@ body {
 
 .testimonials .more-btn {
   padding: 16px 47px;
-  border-radius: 39px;
+  border-radius: 35px;
   border: 1px solid #2091f9;
   outline: none;
   color: #fff;
   background-color: #2091f9;
-  font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.4px;
   cursor: pointer;
 }
 
@@ -794,9 +860,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 40px 50px;
+  padding: 40px 42px;
   margin-right: 60px;
-  margin-bottom: 104px;
+  margin-bottom: 102px;
   max-width: 335px;
   border: 1px solid #dedede;
   -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -809,6 +875,10 @@ body {
   margin-right: 0;
 }
 
+.testimonials__list-item:nth-child(n+4):nth-child(-n+6) {
+  margin-bottom: 80px;
+}
+
 .testimonials__list-img {
   margin-bottom: 40px;
 }
@@ -817,6 +887,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: 0.2px;
   color: #374754;
   margin-bottom: 40px;
 }
@@ -832,7 +903,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .testimonials__list-rating .rating {
@@ -857,6 +928,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #374754;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -899,8 +971,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 100px 0;
-  margin-bottom: 210px;
+  padding: 110px 0;
+  margin-bottom: 200px;
   color: #fff;
   background: #252b42;
 }
@@ -920,6 +992,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   font-weight: normal;
+  margin-left: 10px;
   max-width: 340px;
 }
 
@@ -955,16 +1028,17 @@ body {
   font-size: 16px;
   line-height: 20px;
   max-width: 218px;
-  margin-bottom: 19px;
+  margin-bottom: 33px;
 }
 
 .pricing__trial .start-btn {
   padding: 18px 38px;
-  border-radius: 39px;
+  border-radius: 35px;
   border: 1px solid #2091f9;
   outline: none;
   color: #fff;
   background-color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -1029,11 +1103,13 @@ body {
 }
 
 .contact__subtitle {
+  font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 0.2px;
   color: #374754;
   width: 300px;
-  margin-bottom: 74px;
+  margin-bottom: 69px;
 }
 
 .contact__link {
@@ -1044,11 +1120,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 69px;
+  margin-bottom: 63px;
 }
 
 .contact__link-item {
-  margin-right: 29px;
+  margin-right: 23px;
   list-style: none;
 }
 
@@ -1058,15 +1134,14 @@ body {
 
 .contact__link-item svg {
   fill: #2091f9;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .contact__img-desktop {
   width: 100%;
   max-width: 871px;
-  padding: 0 30px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .contact__img-mobile {
@@ -1084,7 +1159,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 58px;
 }
 
 .contact__connection-item {
@@ -1115,8 +1190,8 @@ body {
 
 .contact__connection-item svg {
   margin-bottom: 15px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .contact__form {
@@ -1125,7 +1200,8 @@ body {
           box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   padding: 52px 50px;
-  margin: 0 20px 100px 20px;
+  margin: 0 20px 99px 20px;
+  max-width: 868px;
 }
 
 .contact__form-title {
@@ -1137,10 +1213,10 @@ body {
 }
 
 .contact__form input {
-  padding: 19px;
+  padding: 19px 20px;
   margin-bottom: 45px;
   width: 100%;
-  border: 0;
+  border: 1px solid #e8e8e8;
   border-radius: 39px;
   outline: none;
   background-color: #efefef;
@@ -1180,36 +1256,36 @@ body {
   height: 193px;
   margin-bottom: 45px;
   resize: none;
-  padding: 19px;
-  border: 0;
+  padding: 23px 20px;
+  border: 1px solid #e8e8e8;
   outline: none;
   background-color: #efefef;
   background: #f4f4f4;
 }
 
 .contact__form-textarea::-webkit-input-placeholder {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 16px;
   color: #18171d63;
 }
 
 .contact__form-textarea:-ms-input-placeholder {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 16px;
   color: #18171d63;
 }
 
 .contact__form-textarea::-ms-input-placeholder {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 16px;
   color: #18171d63;
 }
 
 .contact__form-textarea::placeholder {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 16px;
   color: #18171d63;
@@ -1218,11 +1294,12 @@ body {
 .contact__form .send-btn {
   float: left;
   padding: 18px 54px;
-  border-radius: 39px;
+  border-radius: 35px;
   border: 1px solid #2091f9;
   outline: none;
   color: #fff;
   background-color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -1336,6 +1413,10 @@ body {
   text-decoration: none;
 }
 
+.footer__contact {
+  width: 373px;
+}
+
 .footer__contact-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1354,8 +1435,8 @@ body {
 
 .footer__contact-item svg {
   fill: #fff;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
 }
 
 .footer__newsletter {
@@ -1389,8 +1470,9 @@ body {
 }
 
 .footer__newsletter-input {
-  padding: 19px;
+  padding: 19px 35px;
   width: 100%;
+  max-width: 353px;
   border: 0;
   border-radius: 39px;
   outline: none;
@@ -1401,13 +1483,15 @@ body {
 
 .footer__newsletter .subscribe-btn {
   width: 100%;
+  max-width: 353px;
   padding: 17px;
   margin-bottom: 24px;
-  border-radius: 39px;
+  border-radius: 35px;
   border: 1px solid #2091f9;
   outline: none;
   color: #fff;
   background-color: #2091f9;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;

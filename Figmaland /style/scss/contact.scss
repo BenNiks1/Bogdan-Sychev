@@ -15,19 +15,21 @@
     margin-bottom: 27px;
   }
   &__subtitle {
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+    letter-spacing: 0.2px;
     color: #374754;
     width: 300px;
 
-    margin-bottom: 74px;
+    margin-bottom: 69px;
   }
   &__link {
     display: flex;
     flex-direction: row;
-    margin-bottom: 69px;
+    margin-bottom: 63px;
     &-item {
-      margin-right: 29px;
+      margin-right: 23px;
 
       list-style: none;
       &:last-child {
@@ -35,8 +37,8 @@
       }
       svg {
         fill: #2091f9;
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
       }
     }
   }
@@ -45,8 +47,8 @@
       width: 100%;
 
       max-width: 871px;
-      padding: 0 30px;
-      margin-bottom: 50px;
+      
+      margin-bottom: 60px;
     }
     &-mobile {
       display: none;
@@ -57,7 +59,7 @@
     flex-direction: row;
     align-items: flex-start;
 
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     &-item {
       display: flex;
       flex-direction: column;
@@ -76,8 +78,8 @@
       }
       svg {
         margin-bottom: 15px;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
       }
     }
   }
@@ -88,8 +90,8 @@
     border-radius: 20px;
 
     padding: 52px 50px;
-    margin:0 20px 100px 20px;
-
+    margin: 0 20px 99px 20px;
+    max-width: 868px;
 
     &-title {
       font-weight: bold;
@@ -100,11 +102,11 @@
       margin-bottom: 45px;
     }
     input {
-      padding: 19px;
+      padding: 19px 20px;
       margin-bottom: 45px;
       width: 100%;
 
-      border: 0;
+      border: 1px solid #e8e8e8;
       border-radius: 39px;
       outline: none;
       background-color: #efefef;
@@ -122,15 +124,15 @@
       height: 193px;
       margin-bottom: 45px;
       resize: none;
-      padding: 19px;
+      padding: 23px 20px;
 
-      border: 0;
+      border: 1px solid #e8e8e8;
 
       outline: none;
       background-color: #efefef;
       background: #f4f4f4;
       &::placeholder {
-        font-family: Roboto;
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         line-height: 16px;
 
@@ -140,11 +142,12 @@
     .send-btn {
       float: left;
       padding: 18px 54px;
-      border-radius: 39px;
+      border-radius: 35px;
       border: 1px solid #2091f9;
       outline: none;
       color: #fff;
       background-color: #2091f9;
+      font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 16px;
       line-height: 16px;
@@ -183,7 +186,7 @@
         justify-content: flex-start;
         width: 100%;
         margin-bottom: 30px;
-        &:last-child{
+        &:last-child {
           margin-bottom: 30px;
         }
         a {
@@ -196,7 +199,7 @@
         }
       }
     }
-    &__form{
+    &__form {
       margin-bottom: 149px;
     }
   }

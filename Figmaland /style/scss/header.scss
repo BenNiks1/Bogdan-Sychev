@@ -2,85 +2,79 @@
 =============================*/
 
 .header {
-    width: 100%;
-  
-    margin: 0 auto;
-  
-    background: url(../img/Gradient.png) center no-repeat;
-    background-size: 100% 100%;
-    color: #fff;
-  
-    /*header__inner*/
-    &__inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 20px;
-      margin-bottom: 90px;
-  
-      &-logo {
-      }
-      &-nav {
-        margin: 0 52px;
-        .header__list {
-          display: flex;
-          flex-direction: row;
-          &-item {
-            list-style: none;
-            margin-right: 41px;
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-          &-link {
-            font-size: 15px;
-            line-height: 27px;
-            color: #fff;
-            text-decoration: none;
+  width: 100%;
+
+  margin: 0 auto;
+
+  background: url(../img/Gradient.png) center no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+
+  /*header__inner*/
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    margin-bottom: 100px;
+
+    &-logo {
+      // margin-left: 164px;
+    }
+    &-nav {
+      margin: 0 52px;
+      .header__list {
+        display: flex;
+        flex-direction: row;
+        &-item {
+          list-style: none;
+          margin-right: 41px;
+          &:last-child {
+            margin-right: 0;
           }
         }
-      }
-      &-form {
-        .form-text {
-          padding: 19px 39px;
-          margin-right: 12px;
-  
-          border: 0;
-          border-radius: 39px;
-          outline: none;
-          background-color: #efefef;
-          background: rgba(255, 255, 255, 0.12);
-          &::placeholder {
-            color: #18171d;
-            opacity: 0.12;
-          }
-        }
-        .form-btn {
-          padding: 19px 38px;
-          border-radius: 39px;
-          border: 1px solid #fff;
-          outline: none;
-          color: #2091f9;
-          font-size: 16px;
-          font-weight: 500;
-          cursor: pointer;
-          &:hover {
-            color: #fff;
-            background: rgba(0, 0, 0, 0);
-            transition: 0.2s;
-          }
+        &-link {
+          font-size: 15px;
+          line-height: 27px;
+          letter-spacing: 0.2px;
+          font-weight: normal;
+          color: #fff;
+          text-decoration: none;
         }
       }
-      &-login {
-        display: none;
-  
-        padding: 18px 38px;
+    }
+    &-form {
+      .form-text {
+        padding: 19px 39px;
+        margin-right: 12px;
+        width: 273px;
+
+        border: 0;
+        border-radius: 39px;
+        outline: none;
+        background-color: #efefef;
+        background: rgba(255, 255, 255, 0.12);
+        &::placeholder {
+          color: #18171d;
+          font-size: 14px;
+          line-height: 16px;
+          opacity: 0.12;
+        }
+      }
+      .form-btn {
+        padding: 19px 38px;
         border-radius: 39px;
         border: 1px solid #fff;
+
+        background: #fff;
         outline: none;
         color: #2091f9;
+
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.2px;
         cursor: pointer;
         &:hover {
           color: #fff;
@@ -89,85 +83,110 @@
         }
       }
     }
-  
-    /*header__intro*/
-  
-    &__intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-  
-      margin-bottom: 230px;
-      &-subtitle {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 33px;
-        margin-bottom: 17px;
-      }
-      &-title {
-        font-weight: 900;
-        font-size: 55px;
-        line-height: 65px;
-        margin-bottom: 17px;
-      }
-      &-text {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-  
-        margin-bottom: 90px;
-        max-width: 429px;
-      }
-      &-btn {
-        margin-bottom: 115px;
-        padding: 16px 58px;
-  
-        border-radius: 39px;
-        border: 1px solid #fff;
-        outline: none;
-        color: #2091f9;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 33px;
-        cursor: pointer;
-        &:hover {
-          color: #fff;
-          background: rgba(0, 0, 0, 0);
-          transition: 0.2s;
-        }
-      }
-      &-img {
-        max-width: 1054px;
-        width: 100%;
-      }
-    }
-  }
-  @media screen and (max-width: 880px) {
-    .header {
-      background: url(../img/Gradient.png);
-      background-size: cover;
-      &__inner {
-        justify-content: space-around;
-        margin-bottom: 50px;
-        &-nav {
-          display: none;
-        }
-      }
-      &__intro {
-        &-title {
-          font-weight: 400;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 1220px) {
-    .header__inner-form {
+    &-login {
       display: none;
-    }
-    .header__inner-login {
-      display: block;
+
+      padding: 18px 38px;
+      border-radius: 39px;
+      border: 1px solid #fff;
+      background: #fff;
+      outline: none;
+      color: #2091f9;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
+      }
     }
   }
+
+  /*header__intro*/
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+
+    margin-bottom: 230px;
+    &-subtitle {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0.1px;
+      margin-bottom: 17px;
+    }
+    &-title {
+      font-weight: 900;
+      font-size: 55px;
+      line-height: 65px;
+      margin-bottom: 27px;
+      letter-spacing: 0.2px;
+    }
+    &-text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      text-align: center;
+
+      margin-bottom: 90px;
+      max-width: 429px;
+    }
+    &-btn {
+      margin-bottom: 115px;
+      padding: 16px 58px;
+
+      border-radius: 39px;
+      border: 1px solid #fff;
+      background: #fff;
+      outline: none;
+      color: #2091f9;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s;
+      }
+    }
+    &-img {
+      max-width: 1054px;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .header {
+    background: url(../img/Gradient.png);
+    background-size: cover;
+    &__inner {
+      justify-content: space-around;
+      margin-bottom: 50px;
+      &-nav {
+        display: none;
+      }
+    }
+    &__intro {
+      &-title {
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1220px) {
+  .header__inner-form {
+    display: none;
+  }
+  .header__inner-login {
+    display: block;
+  }
+}
