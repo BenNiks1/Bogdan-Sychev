@@ -12,6 +12,9 @@
   </head>
   <body>
     <svg style="display: none">
+      <symbol viewBox="0 0 28 16" id="menu">
+        <path d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z" fill="white"/>
+      </symbol>
       <symbol viewBox="0 0 44 44" id="features-icon">
         <rect
           x="0.839844"
@@ -134,11 +137,33 @@
             </li>
           </ul>
         </nav>
+        <nav class="header__inner-mobile-nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Home</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Product</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Pricing</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">About</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
         <form action="" class="header__inner-form">
           <input type="text" placeholder="Your Email" class="form-text" />
           <button class="form-btn">Subscribe</button>
         </form>
         <button class="header__inner-login">Login</button>
+        <span class="header__inner-menu">
+          <svg><use xlink:href='#menu'></use></svg>
+        </span>
       </div>
       <div class="header__intro">
         <p class="header__intro-subtitle">At your fingertips</p>
