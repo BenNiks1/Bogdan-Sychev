@@ -24,6 +24,8 @@ const sendBtn = document.querySelector(".send-btn");
 const closeBtn = document.querySelector(".modal__close-btn");
 const modal = document.querySelector(".modal");
 
+
+
 sendBtn.onclick = () => {
   if (modal.classList.contains("active")) {
     modal.classList.remove("active");
