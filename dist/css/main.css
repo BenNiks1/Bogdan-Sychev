@@ -1240,7 +1240,7 @@ body {
 
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1253,8 +1253,9 @@ body {
 .modal__inner {
   position: relative;
   width: 60%;
-  margin: 15% auto;
+  z-index: 2;
   padding: 30px;
+  margin: 15% auto;
   background: #252b42;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -1281,10 +1282,6 @@ body {
   fill: #fff;
   width: 20px;
   height: 20px;
-}
-
-.modal.active {
-  display: block;
 }
 
 /*carusel
@@ -1327,8 +1324,8 @@ body {
   height: 100%;
 }
 
-#btn__prev,
-#btn__next {
+.btn-prev,
+.btn-next {
   position: absolute;
   top: 0;
   left: 0;
@@ -1339,12 +1336,12 @@ body {
   opacity: 0;
 }
 
-#btn__prev:hover,
-#btn__next:hover {
+.btn-prev:hover,
+.btn-next:hover {
   opacity: 0.3;
 }
 
-#btn__next {
+.btn-next {
   left: auto;
   right: 0;
 }

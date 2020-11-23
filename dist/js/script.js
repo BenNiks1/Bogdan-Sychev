@@ -9,9 +9,9 @@ menuButton.onclick = () => {
 // hide testimonials button
 
 const partnersBtn = document.querySelector(".partners-btn");
-const testimonialsSection = document.querySelector(".testimonials");
 
 partnersBtn.onclick = () => {
+  const testimonialsSection = document.querySelector(".testimonials");
   testimonialsSection.classList.toggle("hidden");
   testimonialsSection.classList.contains("hidden")
     ? (testimonialsSection.style.display = "none")
@@ -24,24 +24,19 @@ const sendBtn = document.querySelector(".send-btn");
 const closeBtn = document.querySelector(".modal__close-btn");
 const modal = document.querySelector(".modal");
 
+
 sendBtn.onclick = () => {
-  if (modal.classList.contains("active")) {
-    modal.classList.remove("active");
-  } else {
-    modal.classList.add("active");
-  }
+  modal.style.display = "block";
 };
 const closeModalWindow = () => {
-    if (modal.classList.contains("active")) {
-        modal.classList.remove("active");
-      }
+  modal.style.display = "none";
 };
-closeBtn.addEventListener('click', closeModalWindow)
-modal.addEventListener('click', closeModalWindow)
+closeBtn.addEventListener("click", closeModalWindow);
+modal.addEventListener("click", closeModalWindow);
 
 // carusel
-const prev = document.getElementById("btn__prev"),
-  next = document.getElementById("btn__next"),
+const prev = document.querySelector(".btn-prev"),
+  next = document.querySelector(".btn-next"),
   slides = document.querySelectorAll(".slide"),
   dots = document.querySelectorAll(".dot");
 
