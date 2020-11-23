@@ -13,7 +13,10 @@
   <body>
     <svg style="display: none">
       <symbol viewBox="0 0 28 16" id="menu">
-        <path d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z" fill="white"/>
+        <path
+          d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z"
+          fill="white"
+        />
       </symbol>
       <symbol viewBox="0 0 44 44" id="features-icon">
         <rect
@@ -114,6 +117,15 @@
           </clipPath>
         </defs>
       </symbol>
+      <symbol viewBox="0 0 22 22" id="close">
+        <g>
+          <g>
+            <path
+              d="M2.822-.013L11 8.177l8.178-8.19 2.816 2.82-8.178 8.19 8.176 8.187-2.817 2.82L11 13.819l-8.176 8.187-2.816-2.82 8.176-8.188-8.179-8.19z"
+            />
+          </g>
+        </g>
+      </symbol>
     </svg>
     <header class="header">
       <div class="header__inner">
@@ -162,7 +174,7 @@
         </form>
         <button class="header__inner-login">Login</button>
         <span class="header__inner-menu">
-          <svg><use xlink:href='#menu'></use></svg>
+          <svg><use xlink:href="#menu"></use></svg>
         </span>
       </div>
       <div class="header__intro">
@@ -303,7 +315,7 @@
         <h2 class="testimonials__title">Testimonials</h2>
 
         <ul class="testimonials__list desktop">
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/1.png"
               alt=""
@@ -334,7 +346,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/2.png"
               alt=""
@@ -365,7 +377,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/3.png"
               alt=""
@@ -396,7 +408,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/4.png"
               alt=""
@@ -427,7 +439,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/5.png"
               alt=""
@@ -458,7 +470,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/6.png"
               alt=""
@@ -488,11 +500,10 @@
             <span class="testimonials__list-name">Regina Miles</span>
             <span class="testimonials__list-position">Designer</span>
           </li>
-
         </ul>
 
         <ul class="testimonials__list-mobile">
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/7.png"
               alt=""
@@ -523,7 +534,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/8.png"
               alt=""
@@ -554,7 +565,7 @@
             <span class="testimonials__list-position">Designer</span>
           </li>
 
-          <li class="testimonials__list-item ">
+          <li class="testimonials__list-item">
             <img
               src="./img/testimonials/9.png"
               alt=""
@@ -583,7 +594,7 @@
             </ul>
             <span class="testimonials__list-name">Regina Miles</span>
             <span class="testimonials__list-position">Designer</span>
-          </li> 
+          </li>
         </ul>
 
         <button class="more-btn">More Testimonials</button>
@@ -612,78 +623,122 @@
       <!-- /pricing -->
       <!-- contact -->
       <section class="contact">
+        <h2 class="contact__title">Contact Us</h2>
+        <p class="contact__subtitle">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </p>
+        <ul class="contact__link">
+          <li class="contact__link-item">
+            <a href="#"
+              ><svg><use xlink:href="#twitter"></use></svg></a>
+          </li>
+          <li class="contact__link-item">
+            <a href="#"
+              ><svg><use xlink:href="#facebook"></use></svg></a>
+          </li>
+          <li class="contact__link-item">
+            <a href="#"
+              ><svg><use xlink:href="#linkedin"></use></svg></a>
+          </li>
+        </ul>
+        <div class="contact__img">
+          <img
+            src="./img/contact/map.png"
+            alt="Карта"
+            class="contact__img-desktop"
+          />
+          <img
+            src="./img/contact/map mobile.png"
+            alt="Карта"
+            class="contact__img-mobile"
+          />
+        </div>
+        <ul class="contact__connection">
+          <li class="contact__connection-item">
+            <svg><use xlink:href="#map"></use></svg>
+            <a href="#"
+              >6386 Spring St undefined Anchorage, Georgia 12473 United
+              States</a
+            >
+          </li>
+          <li class="contact__connection-item">
+            <svg><use xlink:href="#phone"></use></svg>
+            <a href="tel:(843) 555-0130">(843) 555-0130</a>
+          </li>
+          <li class="contact__connection-item">
+            <svg><use xlink:href="#mail"></use></svg>
+            <a href="mailto:willie.jennings@example.com"
+              >willie.jennings@example.com</a
+            >
+          </li>
+        </ul>
+        <form action="" class="contact__form" onsubmit="return false">
+          <h3 class="contact__form-title">Contact Us</h3>
+          <input
+            type="text"
+            class="contact__form-name"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            class="contact___form-mail"
+            placeholder="Your Mail"
+          />
+          <textarea
+            type="textarea"
+            class="contact__form-textarea"
+            placeholder="Your Message"
+          ></textarea>
+          <button class="send-btn">Send</button>
+        </form>
+        <!-- modal window  -->
+        <div class="modal ">
         
-          <h2 class="contact__title">Contact Us</h2>
-          <p class="contact__subtitle">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </p>
-          <ul class="contact__link">
-            <li class="contact__link-item">
-              <a href="#"
-                ><svg><use xlink:href="#twitter"></use></svg></a>
-            </li>
-            <li class="contact__link-item">
-              <a href="#"
-                ><svg><use xlink:href="#facebook"></use></svg></a>
-            </li>
-            <li class="contact__link-item">
-              <a href="#"
-                ><svg><use xlink:href="#linkedin"></use></svg></a>
-            </li>
-          </ul>
-          <div class="contact__img">
-            <img src="./img/contact/map.png" alt="Карта" class="contact__img-desktop">
-            <img src="./img/contact/map mobile.png" alt="Карта" class="contact__img-mobile">
-          </div>
-          <ul class="contact__connection">
-            <li class="contact__connection-item">
-              <svg><use xlink:href="#map"></use></svg>
-              <a href="#"
-                >6386 Spring St undefined Anchorage, Georgia 12473 United
-                States</a
-              >
-            </li>
-            <li class="contact__connection-item">
-              <svg><use xlink:href="#phone"></use></svg>
-              <a href="tel:(843) 555-0130">(843) 555-0130</a>
-            </li>
-            <li class="contact__connection-item">
-              <svg><use xlink:href="#mail"></use></svg>
-              <a href="mailto:willie.jennings@example.com"
-                >willie.jennings@example.com</a
-              >
-            </li>
-          </ul>
-          <form action="" class="contact__form">
-            <h3 class="contact__form-title">Contact Us</h3>
-            <input
-              type="text"
-              class="contact__form-name"
-              placeholder="Your Name"
-            />
-            <input
-              type="text"
-              class="contact___form-mail"
-              placeholder="Your Mail"
-            />
-            <textarea
-              type="textarea"
-              class="contact__form-textarea"
-              placeholder="Your Message"
-            ></textarea>
-            <button class="send-btn">Send</button>
-          </form>
-        
+            <p class="modal__text">
+              Мы обязательно с Вами свяжемся в ближайшее время. Спасибо!
+            </p>
+            <span class="modal__close-btn">
+              <svg><use xlink:href="#close"></use></svg>
+            </span>
+          
+        </div>
       </section>
+
       <!-- /contact -->
+      <!-- carusel -->
+  <section class="carusel">
+    <div class="carusel__inner">
+      <ul class="slide__list">
+        <li class="slide active">
+          <img src="./img/carusel/1.jpg" alt="">
+        </li>
+        <li class="slide">
+          <img src="./img/carusel/2.jpg" alt="">
+        </li>
+        <li class="slide">
+          <img src="./img/carusel/3.jpg" alt="">
+        </li>
+        <div id="btn__prev"></div>
+        <div id="btn__next"></div>
+      </ul>
+    </div>
+    </div>
+    <div class="dots__wrapper">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+  
+    </div>
+  </section>
+      <!-- /carusel -->
     </main>
     <!-- footer -->
     <footer class="footer">
       <nav class="footer__nav">
         <div class="footer__nav-item">
           <h3 class="footer__nav-title">Pages</h3>
-          <ul class="footer__list">            
+          <ul class="footer__list">
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">Home</a>
             </li>
@@ -702,8 +757,8 @@
           </ul>
         </div>
         <div class="footer__nav-item">
-          <h3 class="footer__nav-title">Tomothy </h3>
-          <ul class="footer__list">            
+          <h3 class="footer__nav-title">Tomothy</h3>
+          <ul class="footer__list">
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">Eleanor Edwards</a>
             </li>
@@ -723,7 +778,7 @@
         </div>
         <div class="footer__nav-item">
           <h3 class="footer__nav-title">Jane Black</h3>
-          <ul class="footer__list">            
+          <ul class="footer__list">
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">Philip Jones</a>
             </li>
@@ -746,27 +801,33 @@
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
             <a href="#"
-              ><svg><use xlink:href="#twitter"></use></svg></a>
+              ><svg><use xlink:href="#twitter"></use></svg
+            ></a>
           </li>
           <li class="footer__contact-item">
             <a href="#"
-              ><svg><use xlink:href="#facebook"></use></svg></a>
+              ><svg><use xlink:href="#facebook"></use></svg
+            ></a>
           </li>
           <li class="footer__contact-item">
             <a href="#"
-              ><svg><use xlink:href="#linkedin"></use></svg></a>
+              ><svg><use xlink:href="#linkedin"></use></svg
+            ></a>
           </li>
         </ul>
-      <form action="" class="footer__newsletter">
-        
-        <h3 class="footer__newsletter-title">Subscribe to our Newsletter</h3>
-        <p class="footer__newsletter-text">
-          Available exclusivery on Figmaland
-        </p>
-        <input type="text" placeholder="Your Email" class="footer__newsletter-input"/>
-        <button class="subscribe-btn">Subscribe</button>
-      </form>
-    </div>
+        <form action="" class="footer__newsletter">
+          <h3 class="footer__newsletter-title">Subscribe to our Newsletter</h3>
+          <p class="footer__newsletter-text">
+            Available exclusivery on Figmaland
+          </p>
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="footer__newsletter-input"
+          />
+          <button class="subscribe-btn">Subscribe</button>
+        </form>
+      </div>
     </footer>
     <script src="./js/script.min.js"></script>
   </body>

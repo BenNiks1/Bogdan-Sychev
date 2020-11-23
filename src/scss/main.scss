@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 // @import "./scss/header.scss";
 // @import "./scss/features.scss";
 // @import "./scss/buy-section.scss";
@@ -165,9 +166,9 @@ body {
         }
       }
     }
-    .active {
-      display: block;
-    }
+  }
+  .active {
+    display: block;
   }
 
   /*header__intro*/
@@ -917,7 +918,6 @@ body {
       margin-bottom: 33px;
     }
   }
-  
 }
 
 /*pricing
@@ -1022,7 +1022,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .pricing{
+  .pricing {
     margin-bottom: 154px;
   }
 }
@@ -1234,6 +1234,117 @@ body {
 @media screen and (max-width: 1000px) {
   .contact {
     margin: 0 20px;
+  }
+}
+
+/*modal window
+===============================*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  padding: 60px;
+
+  background: #252b42;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    svg {
+      fill: #fff;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.modal.active {
+  display: block;
+}
+
+/*carusel
+==================================*/
+
+.carusel {
+  margin-bottom: 99px;  
+  &__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .slide__list {
+      position: relative;
+      max-width: 1250px;
+      width: 100%;
+      max-height: 700px;
+
+      // box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.7);
+      .slide {
+        display: none;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .slide.active {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+#btn__prev,
+#btn__next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: grey;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#btn__prev:hover,
+#btn__next:hover {
+  opacity: 0.3;
+}
+
+#btn__next {
+  left: auto;
+  right: 0;
+}
+
+.dots__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .dot {
+    background-color: grey;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #000;
   }
 }
 
