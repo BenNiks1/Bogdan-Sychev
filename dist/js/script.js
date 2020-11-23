@@ -24,8 +24,6 @@ const sendBtn = document.querySelector(".send-btn");
 const closeBtn = document.querySelector(".modal__close-btn");
 const modal = document.querySelector(".modal");
 
-
-
 sendBtn.onclick = () => {
   if (modal.classList.contains("active")) {
     modal.classList.remove("active");
@@ -33,12 +31,13 @@ sendBtn.onclick = () => {
     modal.classList.add("active");
   }
 };
-
-closeBtn.onclick = () => {
-  if (modal.classList.contains("active")) {
-    modal.classList.remove("active");
-  }
+const closeModalWindow = () => {
+    if (modal.classList.contains("active")) {
+        modal.classList.remove("active");
+      }
 };
+closeBtn.addEventListener('click', closeModalWindow)
+modal.addEventListener('click', closeModalWindow)
 
 // carusel
 const prev = document.getElementById("btn__prev"),
