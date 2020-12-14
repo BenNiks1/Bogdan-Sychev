@@ -1,1 +1,1 @@
-[GitHub Pages]:https://benniks1.github.io/Figmaland_blue/
+[GitHub Pages](https://benniks1.github.io/Figmaland_blue/)
